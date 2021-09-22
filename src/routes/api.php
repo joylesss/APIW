@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::apiResource('students','App\Http\Controllers\StudentController');
 Route::post('register', 'App\Http\Controllers\RegisterController@register');
 Route::post('login', 'App\Http\Controllers\RegisterController@login');
+# Route phần này anh thấy App\Http\Controllers nó lặp đi lặp lại nhiều lần, có cách nào khác làm cho nó gọn hơn được kh
