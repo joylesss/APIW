@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::apiResource('students','App\Http\Controllers\StudentController');
 Route::post('register', 'App\Http\Controllers\RegisterController@register');
 Route::post('login', 'App\Http\Controllers\RegisterController@login');
+#Route phần này "App\Http\Controllers" anh thấy nó trùng lặp, có thể nào gộp l
